@@ -6,8 +6,8 @@
       <class name="testClasses.login_test">
         <methods>
           <include name="launchCompatio"/>
-          <include name="a_elemntsTest"/>
           <include name="closeCompatio"/>
+          <include name="a_elementsTest"/>
         </methods>
       </class> <!-- testClasses.login_test -->
     </classes>

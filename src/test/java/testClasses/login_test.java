@@ -30,6 +30,9 @@ public class login_test
 	{
 		Assert.assertEquals("Compatio", driver.getTitle());
 		Assert.assertEquals(cp.clogo.isDisplayed() && cp.clogo.getSize().width==161 && cp.clogo.getSize().height==50, true);
+		Assert.assertEquals(cp.login.getText(), "Log In");
+		Assert.assertEquals(cp.email.getText(), "Email Address");
+		
 	}
 	
 	@AfterMethod

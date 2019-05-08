@@ -18,4 +18,10 @@ public class login_pom
 	
 	@FindBy(xpath= "//img[@src='/assets/images/compatio.png']")
 	public WebElement clogo;
+	
+	@FindBy(xpath = "//p[contains(text(),'Log In')]")
+	public WebElement login;
+	
+	@FindBy(xpath = "//label[contains(text(),'Email Address')]")
+	public WebElement email;
 }
