@@ -46,4 +46,27 @@ public class login_pom
 	@FindBy(xpath = "//a[contains(text(),'Request Access')]")
 	public WebElement rqstaccess;
 	
+	@FindBy(xpath = "//button[contains(text(),'Send Me Instructions')]")
+	public WebElement instructions;
+	
+	@FindBy(xpath = "//input[@placeholder='John']")
+	public WebElement john;
+	
+	@FindBy(xpath = "//input[@placeholder='Anderson']")
+	public WebElement anderson;
+	
+	@FindBy(xpath = "//select[@class='form-control']")
+	public WebElement companyname;
+	
+	@FindBy(xpath = "//input[@placeholder='name@company.com']")
+	public WebElement companyemail;
+	
+	@FindBy(xpath = "//input[@placeholder='(555) 555-5555']")
+	public WebElement phone;
+	
+	@FindBy(xpath = "//button[contains(text(),'Request Access')]")
+	public WebElement submit;
+	
+	@FindBy(xpath = "//a[contains(text(),'INVITE USERS')]")
+	public WebElement invite;
 }

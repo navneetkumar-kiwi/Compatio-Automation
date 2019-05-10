@@ -7,7 +7,7 @@
         <methods>
           <include name="launchCompatio"/>
           <include name="closeCompatio"/>
-          <include name="a_elementsTest"/>
+          <include name="a_rqst"/>
         </methods>
       </class> <!-- testClasses.login_test -->
     </classes>

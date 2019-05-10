@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="0" ignored="2" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="87507" started-at="2019-05-09T16:34:29Z" finished-at="2019-05-09T16:35:57Z">
+  <suite name="Default suite" duration-ms="141510" started-at="2019-05-10T12:08:52Z" finished-at="2019-05-10T12:11:13Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="87507" started-at="2019-05-09T16:34:29Z" finished-at="2019-05-09T16:35:57Z">
+    <test name="Default test" duration-ms="141510" started-at="2019-05-10T12:08:52Z" finished-at="2019-05-10T12:11:13Z">
       <class name="testClasses.login_test">
-        <test-method status="PASS" signature="launchCompatio()[pri:0, instance:testClasses.login_test@6500df86]" name="launchCompatio" is-config="true" duration-ms="61648" started-at="2019-05-09T16:34:30Z" finished-at="2019-05-09T16:35:31Z">
+        <test-method status="PASS" signature="launchCompatio()[pri:0, instance:testClasses.login_test@5f058f00]" name="launchCompatio" is-config="true" duration-ms="58916" started-at="2019-05-10T12:08:52Z" finished-at="2019-05-10T12:09:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchCompatio -->
-        <test-method status="PASS" signature="c_forgot()[pri:0, instance:testClasses.login_test@6500df86]" name="c_forgot" duration-ms="3449" started-at="2019-05-09T16:35:31Z" finished-at="2019-05-09T16:35:35Z">
+        <test-method status="PASS" signature="a_rqst()[pri:0, instance:testClasses.login_test@5f058f00]" name="a_rqst" duration-ms="18032" started-at="2019-05-10T12:09:51Z" finished-at="2019-05-10T12:10:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- c_forgot -->
-        <test-method status="PASS" signature="closeCompatio()[pri:0, instance:testClasses.login_test@6500df86]" name="closeCompatio" is-config="true" duration-ms="465" started-at="2019-05-09T16:35:35Z" finished-at="2019-05-09T16:35:35Z">
+        </test-method> <!-- a_rqst -->
+        <test-method status="PASS" signature="closeCompatio()[pri:0, instance:testClasses.login_test@5f058f00]" name="closeCompatio" is-config="true" duration-ms="885" started-at="2019-05-10T12:10:09Z" finished-at="2019-05-10T12:10:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeCompatio -->
-        <test-method status="PASS" signature="launchCompatio()[pri:0, instance:testClasses.login_test@6500df86]" name="launchCompatio" is-config="true" duration-ms="17060" started-at="2019-05-09T16:35:35Z" finished-at="2019-05-09T16:35:52Z">
+        <test-method status="PASS" signature="launchCompatio()[pri:0, instance:testClasses.login_test@5f058f00]" name="launchCompatio" is-config="true" duration-ms="47329" started-at="2019-05-10T12:10:10Z" finished-at="2019-05-10T12:10:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchCompatio -->
-        <test-method status="PASS" signature="d_rqst()[pri:0, instance:testClasses.login_test@6500df86]" name="d_rqst" duration-ms="3516" started-at="2019-05-09T16:35:52Z" finished-at="2019-05-09T16:35:56Z">
+        <test-method status="PASS" signature="b_forgot()[pri:0, instance:testClasses.login_test@5f058f00]" name="b_forgot" duration-ms="15097" started-at="2019-05-10T12:10:57Z" finished-at="2019-05-10T12:11:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- d_rqst -->
-        <test-method status="PASS" signature="closeCompatio()[pri:0, instance:testClasses.login_test@6500df86]" name="closeCompatio" is-config="true" duration-ms="940" started-at="2019-05-09T16:35:56Z" finished-at="2019-05-09T16:35:57Z">
+        </test-method> <!-- b_forgot -->
+        <test-method status="PASS" signature="closeCompatio()[pri:0, instance:testClasses.login_test@5f058f00]" name="closeCompatio" is-config="true" duration-ms="1197" started-at="2019-05-10T12:11:12Z" finished-at="2019-05-10T12:11:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeCompatio -->
       </class> <!-- testClasses.login_test -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
