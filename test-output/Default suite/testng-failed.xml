@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testClasses.login_test">
+      <class name="testClasses.forgot_test">
         <methods>
+          <include name="resetpswrd"/>
+          <include name="b_resetlink"/>
           <include name="launchCompatio"/>
           <include name="closeCompatio"/>
-          <include name="a_rqst"/>
         </methods>
-      </class> <!-- testClasses.login_test -->
+      </class> <!-- testClasses.forgot_test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

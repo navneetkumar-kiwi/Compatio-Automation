@@ -1,5 +1,7 @@
 package testClasses;
 
+import static org.testng.Assert.assertEquals;
+
 import java.awt.Window;
 
 import org.openqa.selenium.WebDriver;
@@ -11,6 +13,7 @@ import org.testng.annotations.Test;
 
 import baseClass.DriverClass;
 import pageObjectClasses.login_pom;
+import testListeners.SingleDataProvider;
 
 public class login_test 
 {
@@ -22,7 +25,8 @@ public class login_test
 	{
 		driver = DriverClass.set();
 		cp =  new login_pom(driver);
-		driver.get("http://gms-qa-app.s3-website.us-east-2.amazonaws.com/");
+		String url = "http://gms-dev-app.s3-website.us-east-2.amazonaws.com/";
+		driver.get(url);
 		driver.manage().window().fullscreen();Thread.sleep(2000);
 	}
 	
@@ -41,44 +45,13 @@ public class login_test
 		Assert.assertEquals(cp.account.getText(), "Don’t have an account? Request Access");
 	}
 	
-	@Test(enabled=false)
-	public void c_login() throws InterruptedException
+	@Test(dataProvider = "data", dataProviderClass = SingleDataProvider.class, enabled=true)
+	public void c_login(String username, String password) throws InterruptedException
 	{
-		cp.emailplc.sendKeys("navneet.kumar@kiwitech.com");Thread.sleep(3000);
-		cp.pswrdplc.sendKeys("Jaimaa26$");Thread.sleep(3000);
+		cp.emailplc.sendKeys("avanish.jaiswal@kiwitech.com");Thread.sleep(3000);
+		cp.pswrdplc.sendKeys("India@123");Thread.sleep(3000);
 		cp.loginbtn.click();Thread.sleep(3000);
-	}
-	
-	@Test(enabled=true)
-	public void b_forgot() throws InterruptedException
-	{
-		cp.forgot.click();Thread.sleep(2000);
-		Assert.assertEquals(cp.clogo.isDisplayed() && cp.clogo.getSize().width==161 && cp.clogo.getSize().height==50, true);
-		Assert.assertEquals(cp.email.getText(), "Email Address");
-		Assert.assertEquals(cp.emailplc.isDisplayed(), true);
-		Assert.assertEquals(cp.instructions.getText(), "Send Me Instructions");
-		cp.emailplc.sendKeys("navneet.kumar@kiwitech.com");Thread.sleep(2000);
-		cp.instructions.click();Thread.sleep(2000);
-		
-		cp.emailplc.sendKeys("navneet.kumar@kiwitech.com");Thread.sleep(2000);
-		cp.pswrdplc.sendKeys("Jaimaa26$");Thread.sleep(2000);
-		cp.loginbtn.click();Thread.sleep(2000);
-		
-		cp.invite.click();Thread.sleep(2000);
-		
-	}
-	
-	@Test(enabled=true)
-	public void a_rqst() throws InterruptedException
-	{
-		cp.rqstaccess.click();Thread.sleep(2000);
-		cp.john.sendKeys("Navneet Kumar");Thread.sleep(2000);
-		cp.anderson.sendKeys("Kumar Navneet");Thread.sleep(2000);
-		Select drop = new Select(cp.companyname);Thread.sleep(2000);
-		drop.selectByIndex(1);Thread.sleep(2000);
-		cp.companyemail.sendKeys("navn32eet.kumar12323322@shimano.co.in");Thread.sleep(2000);
-		cp.phone.sendKeys("9858745874");Thread.sleep(2000);
-		cp.submit.click();Thread.sleep(2000);
+		Assert.assertEquals(cp.logout.getText(), "Logout");
 	}
 	
 	@AfterMethod
